@@ -26,7 +26,8 @@
           "path": "./syntaxes/drogon-csp.tmLanguage.json",
           "embeddedLanguages": {
             "source.cpp": "cpp",
-            "meta.embedded.block.cpp": "cpp"
+            "meta.embedded.block.cpp": "cpp",
+            "text.html.basic": "html"
           }
         },
         {

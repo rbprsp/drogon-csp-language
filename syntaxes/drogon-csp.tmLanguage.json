@@ -7,7 +7,8 @@
 		{"include": "#variable-use"},
 		{"include": "#viewinclude"},
 		{"include": "#layoutinclude"},
-		{"include": "#expression-use"}
+		{"include": "#expression-use"},
+		{"include": "text.html.basic"}
 	],
 	"repository": {
 		"cppcode": {

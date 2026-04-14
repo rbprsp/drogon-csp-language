@@ -33,7 +33,12 @@
         {
             "path": "./syntaxes/injection.json",
             "scopeName": "todo-comment.injection",
-            "injectTo": ["text.html.derivative", "text.html.vue"]
+            "injectTo": ["text.html.derivative"]
+        },
+        {
+            "path": "./syntaxes/csp-attr-injection.json",
+            "scopeName": "csp-expression.injection",
+            "injectTo": ["source.csp"]
         }
       ]
     }

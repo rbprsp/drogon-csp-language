@@ -1,0 +1,34 @@
+{
+    "scopeName": "csp-expression.injection",
+    "injectionSelector": "L:string.quoted.double.html, L:string.quoted.single.html",
+    "patterns": [
+        {"include": "#expression-use"},
+        {"include": "#cppblock"}
+    ],
+    "repository": {
+        "expression-use": {
+            "begin": "(\\{%)",
+            "beginCaptures": {
+                "1": {"name": "keyword.drogon-csp"}
+            },
+            "end": "(%\\})",
+            "endCaptures": {
+                "1": {"name": "keyword.drogon-csp"}
+            },
+            "contentName": "meta.embedded.block.cpp",
+            "patterns": [{"include": "source.cpp"}]
+        },
+        "cppblock": {
+            "begin": "(<%(?:c\\+\\+|inc)?)",
+            "beginCaptures": {
+                "1": {"name": "keyword.drogon-csp"}
+            },
+            "end": "(%>)",
+            "endCaptures": {
+                "1": {"name": "keyword.drogon-csp"}
+            },
+            "contentName": "meta.embedded.block.cpp",
+            "patterns": [{"include": "source.cpp"}]
+        }
+    }
+}
